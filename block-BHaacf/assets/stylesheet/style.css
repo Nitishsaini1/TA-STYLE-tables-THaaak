@@ -271,7 +271,7 @@ body{
     text-align: center;
 }
 .program-margin{
-    margin: 80px 0;
+    margin: 25px 0;
 }
 .active{
     color: var(--primary) !important;
@@ -304,7 +304,7 @@ body{
     margin: 0 12px;
 }
 /*  table */
-table {
+/* table {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -314,7 +314,7 @@ td {
     padding: 40px 48px;
     font-size: 14px;
 }
-/*  TRAINER */
+-----------trainer--------
 .trainer-item {
     padding: 32px;
     box-shadow: 0 0 12px rgb(0 0 0 / 10%);
@@ -344,7 +344,7 @@ td {
 .width-full{
     width: 100%;
 }
-/*  contact us */
+---------  contact us -----------
 .form-container {
     background: url(../media/featured-image/contact-bg.jpg) no-repeat;
     background-size: cover;
@@ -362,6 +362,77 @@ td {
 .btn-last{
     color: #fff;
 }
+ */
+table{
+    /* max-width: 1200px; */
+    border: 1px solid;
+    margin: 25px auto;
+}
+td{
+    border: 1px solid;
+    padding: 42px 46px;
+    text-align: center;
+}
+/*  trainers} */
+.width-full{
+    width: 100%;
+}
+.about-trainer{
+     margin: 49px 20px 20px 20px;
+     padding: 26px 40px ;
+     box-shadow: 0 0 12px rgba(0, 0, 0, 33%);
+     border-radius: 4px;
+}
+.about-trainer h6{
+    font-size: 15px;
+    color: var(--primary);
+    padding-top: 20px;
+}
+.about-trainer h5{
+    font-size: 24px ;
+    font-weight: 700;
+    /* padding: 24px 0; */
+}
+.about-trainer p{
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+.about-trainer li a{
+    color: black;
+    margin-right: 25px;
+}
+/*  contaact us */
+.bg-img{
+    width: 100%;
+
+    background: url(../media/featured-image/contact-bg.jpg) no-repeat;
+    background-size: cover;
+}
+form{
+    background-color: #fff;
+    margin: 80px 40px;
+    padding: 20px;
+}
+.form-control {
+    border: 1px solid #e7e5e5;
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    font-family: "Poppins", sans-serif;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+.btn-last{
+    color: #fff;
+    border: 0;
+    outline: 0;
+} 
+
+/*  footer */
 footer{
     padding: 20px 0;
+}
+a:hover{
+    color: rgb(0, 0, 0);
 }

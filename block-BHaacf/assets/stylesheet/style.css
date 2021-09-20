@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* my resets */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  color: #fff;
+}
+/*  variables */
+:root{
+    --primary:rgb(234, 86, 58);
+    --secondary: rgb(229, 87,62);
+    --text-light:rgb(227, 227,227);
+    --text-dark:rgb(102, 109, 116);
+
+}
+
+/*  custom styles */
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+.font-0{
+    font-size: 0;
+}
+.padding{
+    padding:120px 0;
+}
+.text-center{
+    text-align: center;
+}
+/*  flex */
+.flex {
+    display: flex;   
+}
+.flex-two{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.item-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-48{
+    flex: 0 0 48%;
+}
+
+.flex-65{
+    flex: 0 1 65%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 16px;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    background-color: var(--primary);
+    transition: all 200ms ease-in-out;
+
+}
+/* container */
+.container {
+    max-width: 1380px;
+   
+    margin: 0 auto;
+}
+
+/*header */
+.navbar{
+    padding: 16px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999; 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.brand h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+.text-primary{
+    color: var(--primary);
+}
+.nav-menu-item{
+    margin-left: 32px;
+}
+.nav-menu-item a{
+    font-weight: 500;
+    color: #fff;
+}
+
+/*  hero section */
+.hero{
+    position: relative;
+    color: #fff;
+}
+.video{
+     width: 100%;
+     max-width: 1000vh;
+    object-fit: cover;
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(35, 45, 56, 0.7);
+}
+.hero-heading{
+    font-size: 80px ;
+    font-weight: 700;
+    margin: 24px 0;
+}
+.hero-subheading{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.hero .btn{
+    font-size: 16px;
+    color: #fff;
+}
+/*  program */
+.program{
+    padding: 120px 0;
+}
+.program-heading h2{
+    font-size: 44px;
+    font-weight: 900;
+}
+.program-heading img{
+    padding: 20px 0;
+}
+.program-detail{
+    font-size: 20px;
+    /* color: var(--text-light); */
+    max-width: 700px;
+    text-align: center;
+}
+.program-margin{
+    margin-top: 40px;
+    line-height: 1.6;
+}
+.featured-icon{
+    margin-right:  20px;
+}
+.program-feature-detail h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+/*  call us now  */
+.call-now{
+    background: url(../media/featured-image/cta-bg.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.call-now h2{
+    font-size: 32px;
+    font-weight: 700;
+    padding: 15px 0;
+}
+.call-now p{
+    padding: 0 10%;
+}
+.call-now a{
+    color: #fff;
+     margin: 15px 0;
+}
+/*  buy prgram */
+.class-item{
+    margin-bottom: 32px ;
+}
+.class-item a{
+    padding: 32px;
+    box-shadow: 0 0 12px rgb(0 0 0 / 15%);
+    width: 100%;
+    border-radius: 4px;
+}
+.class-item h4{
+    padding-left: 14px;
+    font-weight: 700;
+  font-size: 26px;
+  color: black;
+}
+.class-item .active h4{
+    color: var(--secondary);
+}
+.btn-secondary
+{
+    width: 100%;
+   font-size: 27px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+.program-margin{
+    margin: 80px 0;
+}
+.active{
+    color: var(--primary) !important;
+}
+.class-training h4{
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+    margin-bottom: 15px;
+}
+.class-training p{
+    margin-bottom: 20px;
+}
+.training-img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.btn-third{
+    color: #fff;
+}
+.schedule{
+    background: url(../media/featured-image/schedule-bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.schedule-days{
+    margin-top: 60px;
+}
+.schedule-days span{
+    margin: 0 12px;
+}
+/*  table */
+table {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+td {
+    border: 1px solid;
+    text-align: center;
+    padding: 40px 48px;
+    font-size: 14px;
+}
+/*  TRAINER */
+.trainer-item {
+    padding: 32px;
+    box-shadow: 0 0 12px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+.trainer-item h5 {
+    color: var(--primary);
+    font-size: 14px;
+    margin-top: 16px;
+}
+.trainer-item h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--textDark);
+    margin-bottom: 12px;
+}
+.trainer-item p {
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+.trainer-item li a {
+    color: var(--textDark);
+    font-size: 20px;
+    padding-right: 9px;
+}
+.width-full{
+    width: 100%;
+}
+/*  contact us */
+.form-container {
+    background: url(../media/featured-image/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 80px 60px;
+}
+.form-control {
+    border: 1px solid #e7e5e5;
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+    font-family: "Poppins", sans-serif;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+.btn-last{
+    color: #fff;
+}
+footer{
+    padding: 20px 0;
+}
